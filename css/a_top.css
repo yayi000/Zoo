@@ -1,0 +1,404 @@
+/* 設定響應式不要有下方左右卷軸 */
+@media screen and (max-width: 960px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* 最上方導覽列全部 */
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    height: 130px;
+
+}
+
+.navBar {
+    width: 700px;
+    /* padding: 10px; */
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.nav,
+section {
+    display: block;
+}
+
+/* body {
+    line-height: 1;
+} */
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #568ABF;
+
+}
+
+.nav {
+    /* width: 1280px; */
+    display: flex;
+    /* height: 150px; */
+}
+
+/* 調整loge樣式(大小)、顏色、圓角 */
+.loge {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px 10px 40px 15px;
+    width: 100px;
+    /* position: absolute; */
+}
+
+/* 後來改 */
+@media screen and (max-width: 768px) {
+    img.loge {
+        width: 70px;
+        margin: 10px;
+    }
+}
+
+
+
+
+/* button.css */
+
+#contactus {
+    background-color: #5C9A45;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -5px
+}
+
+#contactus2 {
+    background-color: #5C9A45;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    display: none;
+}
+
+
+/* 常見問答 & 聯絡我們 
+滑鼠碰到文字變成小手樣式 */
+
+#contactus,
+#contactus2:hover {
+    cursor: pointer;
+    /* width: 120px; */
+}
+
+/* 搜尋 */
+#search1 {
+    background-color: #FFEBF2;
+    border-color: #FFEBF2;
+    /* margin: 10px; */
+    cursor: pointer;
+}
+
+/* 搜尋按鈕 */
+/* .button {
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+
+
+} */
+
+/* 下拉式導覽列 navBar.css */
+ul {
+    /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.navBar {
+    /* border: #ccc 1px solid; */
+    display: inline-block;
+    font-family: 'Microsoft JhengHei';
+    font-size: 13px;
+    position: absolute;
+    top: 8%;
+    right: 0;
+}
+
+ul.navBar li {
+    position: relative;
+    white-space: nowrap;
+    /* border-right: #ccc 1px solid; */
+
+}
+
+ul.navBar>li:last-child {
+    border-right: none;
+}
+
+/* 只有第一層是靠左對齊*/
+ul.navBar>li {
+    float: left;
+}
+
+ul.navBar a {
+    /* background-color: #fff; */
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.animaltext a {
+    background-color: #fff;
+    color: black;
+
+}
+
+
+/* 滑鼠移入次選單上層按鈕保持變色*/
+ul.navBar li:hover>a {
+    background-color: #da7e5c;
+    color: #fff;
+}
+
+
+
+
+/* 隱藏次選單 */
+ul.navBar ul {
+    /* border: #ccc 1px solid; */
+    position: absolute;
+    z-index: 99;
+    left: 00px;
+    top: 100%;
+    min-width: 180px;
+    display: none;
+}
+
+ul.navBar ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.navBar ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* 滑鼠滑入展開次選單 */
+ul.navBar li:hover>ul {
+    display: block;
+}
+
+
+/* 中間輪播圖以上的響應式當螢幕寬度小於等於768px時，修改頁面樣式 */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+
+    .navBar {
+        display: none;
+        width: 25%;
+        margin-left: 100%;
+        margin-top: 10%;
+        z-index: 1;
+
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    #contactus2 {
+        font-size: 12px;
+        width: 70px;
+        height: 40px;
+        top: 70px;
+        right: 20px;
+        display: block;
+    }
+
+    #contactus2:hover {
+        width: 80px;
+    }
+}
+
+
+/* 下方園區地址、電話 */
+.add {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 50px;
+
+
+}
+
+footer {
+    background-color: #5C9A45;
+}
+
+
+
+/* 大於768px隱藏起來的下拉式選單 */
+.btn {
+    border: none;
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+
+    /* display: none; */
+
+}
+
+/* 大於768px隱藏起來的下拉式選單 */
+@media screen and (max-width: 768px) {
+
+    ul.navBar {
+        display: none;
+    }
+}
+
+
+div.new1 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    div.new1 {
+        display: block;
+
+    }
+}
+
+div.new1 {
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: none;
+}
+
+#icon3 {
+    border: none;
+    background-color: none;
+
+
+
+}
+
+/* 取消ul預設的內縮及樣式 */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.drop-down-menu {
+    /* border: #ccc 1px solid; */
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    list-style: none;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+    /* border-right: #ccc 1px solid; */
+}
+
+ul.drop-down-menu>li:last-child {
+    border-right: none;
+}
+
+/* 只有第一層是靠左對齊*/
+ul.drop-down-menu>li {
+    float: right;
+}
+
+ul.drop-down-menu a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 10px;
+    /* padding: 0 30px; */
+    text-decoration: none;
+    line-height: 40px;
+
+}
+
+ul.drop-down-menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    background-color: #da7e5c;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul.drop-down-menu li:hover>a {
+    /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #da7e5c;
+    color: #fff;
+}
+
+ul.drop-down-menu ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 40px;
+}
+
+ul.drop-down-menu ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+/*第三層以後的選單出現位置與第二層不同*/
+ul.drop-down-menu ul ul {
+
+    z-index: 999;
+    top: 0px;
+    left: 0;
+
+}
+
+ul.drop-down-menu ul {
+    /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover>ul {
+    /* 滑鼠滑入展開次選單*/
+    display: block;
+}

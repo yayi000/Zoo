@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物園</title>
+    <!--title的 icon -->
+    <link rel="icon" href="../img/zoologe.png">
+    <!-- 遷入css -->
+    <link rel="stylesheet" href="../css/a_top.css">
+    <link rel="stylesheet" href="../css/d_open_time.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../css/k_a_message.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="nav">
+            <!-- 滑鼠碰到loge會變成房子圖片，點房子會回到最上面 -->
+            <a href="../html/a_front_page.html"><img class="loge" src="../img/zoologe.png" onmouseover="this.src='../img/home.png';
+               " onmouseout="this.src=' ../img/zoologe.png ';"></a>
+
+            <!-- 導覽列 -->
+            <ul class="navBar">
+                <li><a href="../html/k_new_things.html">園區新鮮事</a></li>
+                <li><a href="../html/l_Introduction.html">動物園簡介</a></li>
+                <li><a href="#">我們的動物</a>
+                    <ul>
+                        <li class="animaltext"><a onclick="location.href='../html/e_ocean_world.html'">海洋動物區</a></li>
+                        <li class="animaltext"><a onclick="location.href='../html/f_african_animals.html'">非洲動物區</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">參觀資訊</a>
+                    <ul class="animaltext">
+                        <li class="animaltext"><a onclick="location.href='../html/d_open_time.html'">開放時間</a></li>
+                        <li class="animaltext"><a onclick="location.href='../html/b_buy_tickets.html'">票價資訊</a></li>
+                        <li class="animaltext"><a onclick="location.href='../html/c_transportation.html'">交通及停車</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../html/m_QA.html">常見問答</a></li>
+                <input id="contactus" type="button" value="聯絡我們" onclick="location.href='../html/n_contact_us.html'">
+            </ul>
+            <div class="new1">
+                <ul id="icon3" class="drop-down-menu">
+                    <li><a href="#"><button class="btn"><i class="fa fa-bars"></i>Menu</a></button>
+                        <ul class="navBar2">
+                            <li><a href="../html/k_new_things.html">園區新鮮事</a></li>
+                            <li><a href="../html/l_Introduction.html">動物園簡介</a> </li>
+                            <li><a href="#">我們的動物</a>
+                                <ul>
+                                    <li><a onclick="location.href='../html/e_ocean_world.html'">海洋動物區</a>
+                                    </li>
+
+                                    <li><a onclick="location.href='../html/f_african_animals.html'">非洲動物區</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">參觀資訊</a>
+                                <ul>
+                                    <li><a onclick="location.href='../html/d_open_time.html'">開放時間</a>
+                                    </li>
+
+                                    <li><a onclick="location.href='../html/b_buy_tickets.html'">票價資訊</a>
+                                    </li>
+
+                                    <li><a onclick="location.href='../html/c_transportation.html'">交通及停車</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../html/m_QA.html">常見問題</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <input id="contactus2" type="button" value="聯絡我們" onclick="location.href='../html/n_contact_us.html'">
+        </div>
+    </section>
+
+
+    <div class="message">
+        <div class="message1">
+            <h1><b> 清明連假營業時間</b></h1>
+            <p>4/1(六) ~ 4/5(三)皆正常營業 ！</p>
+        </div>
+        <div class="message2">
+            <img src="../img/children'sday.png">
+        </div>
+        <div class="message3">
+            <h4>【清明連假營業時間】</h4>
+            <p>4/1(六) ~ 4/5(三)皆 正常營業 ！</p>
+            <p>
+                5天連假動物園都有精彩的表演節目，泡泡互動秀、魔術表演、畫糖秀和河馬樂樂見面會服務台還有超可愛的動物貼紙限量發放~
+                還有還有，兒童節當天(4/4)12歲以下兒童入園免費！
+                連假一起來動物園同樂吧~
+            </p>
+            <br>------------ <br>
+            <p>營業時間：</p>
+            <P>上午9:00-下午17:00</P>
+            <P>(16:00最後進場~)</P>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <!-- 園區地址、電話 -->
+    <footer>
+        <hr>
+        <div class="add">
+            <p>服務時間 │ 09:00 至 17:00 (每周一及除夕休園，連續假期遇到週一則是視同假日開園)，售票時間至16:30</p>
+            <p>園區地址│ 408臺中市南屯區公益路二段51號</p>
+            <p>園區電話│ （04）1234-5678</p>
+            <a class="a-back" href="#">Back to top</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

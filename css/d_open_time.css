@@ -1,0 +1,96 @@
+    /* 園區開放時間 字樣式調整 */
+    .opentime1 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* 園區開放時間 */
+    div.opentime>h1 {
+        color: green;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    /* 園區開放時間*/
+    table.opentime1 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 50px;
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: solid #4F7C46;
+        /* background-color: lightblue; */
+    }
+    /* 下方溫馨提醒 */
+    div.opentime>div {
+
+        padding: 50px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        list-style-type: decimal;
+      
+    }
+
+    h3+ol {
+        font-size: 16px;
+    }
+
+    ol>li strong {
+        color: rgb(181, 88, 38);
+
+    }
+    /* 下方icon動畫 */
+    .container {
+        position: relative;
+        /* width: 100%; */
+        height: 100px;
+        margin-top: 0;
+        /* background-color: #4F7C46; */
+      }
+      
+      .icon-left,
+      .icon-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: all 1s ease-out;
+        width: 90px;
+        height: 90px;
+      }
+      
+      .icon-left {
+        left: 0;
+      }
+      
+      .icon-right {
+        right: 0;
+      }
+      
+      .container:hover .icon-left {
+        left: 53%;
+        opacity: 1;
+      }
+      
+      .container:hover .icon-right {
+        right: 50%;
+        opacity: 1;
+      }
+      
+      .container:hover .icon-left,
+      .container:hover .icon-right {
+        transform: translate(-50%, -50%) scale(1.5);
+      }
+
+      @media screen and (max-width: 768px) {
+
+        div.opentime>table.opentime1{
+          width: 80%;
+        }
+    }

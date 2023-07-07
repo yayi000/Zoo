@@ -1,0 +1,59 @@
+div.zoopark {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+div.zoopark>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+div.Introduction>h1 {
+    color: green;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+/* 公告內容的最外層div */
+div.text {
+    width: 1000px;
+    margin: auto;
+
+}
+
+/* 公告內容 */
+div.text>p {
+    padding: auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    div.text {
+        width: 80%;
+        display: block;
+        font-size: 16px;
+        line-height: 40px;
+        ;
+    }
+
+    div.Introduction2 {
+        margin-bottom: -120px;
+    }
+}
+
+/* 下方圖片 */
+#penguin {
+    width: 100%;
+}
+
+div.Introduction2 {
+    margin-bottom: -20px;
+}

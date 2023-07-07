@@ -1,0 +1,57 @@
+/* 園區新鮮事  */
+.QA {
+    width: 100%;
+    margin-bottom: 100px;
+    /* background-color: burlywood; */
+}
+
+/* 園區新鮮事 字樣式調整*/
+div.QA>h1 {
+    color: green;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+div.QA-wrap {
+    width: 50%;
+    max-height: 500px;
+    margin: auto;
+    /* background-color: tomato; */
+}
+
+div.QA-text {
+    width: 600px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: auto;
+    line-height: 40px;
+    /* background-color: lightgreen; */
+}
+
+div.question {
+    color: #27ba7e;
+    font-size: larger;
+}
+
+div.answer {
+    color: rgba(50, 60, 75, .8);
+}
+
+@media screen and (max-width: 768px) {
+
+    div.QA-text {
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    div.QA-wrap {
+        width: 80%;
+    }
+
+}

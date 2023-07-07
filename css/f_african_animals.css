@@ -1,0 +1,58 @@
+/* 非洲動物區 */
+div>h1 {
+    color: green;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+div.oceanworld>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    margin: 40px;
+    /* background-color: aqua; */
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 10px;
+    padding: auto;
+
+}
+
+/* 卡片裡的動物名稱 */
+.container {
+    padding: 2px 16px;
+}
+
+.container>h4 {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    /* background-color: aqua; */
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    div.oceanworld>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

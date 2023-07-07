@@ -1,0 +1,117 @@
+/*聯絡我們 */
+.contact-us {
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+/* 聯絡我們 字樣式調整*/
+div.contact-us>h1 {
+    color: green;
+    font-size: 36px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-top: auto;
+}
+/* form */
+div.form {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    
+}
+div.form>div{
+    margin: auto;
+    width: 800px;
+   
+}
+div.formbox {
+    margin: 20px;
+}
+/* 輸入框設定 */
+div.formbox>input.box,
+select,
+option {
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 50px;
+    border: solid 1px;
+    border-radius: 5px;
+
+}
+div.formbox>label{
+    font-size: 18px;
+}
+
+/* 問題內容文字輸入框 */
+textarea{
+    width: 100%;
+    height: 200px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+      margin-top: 2%;
+}
+
+/* 調整姓名欄位 */
+div>label.name1{
+    padding-right: 30px;
+    /* background-color: #5C9A45; */
+}
+
+
+/* 驗證通過時 輸入框後面顯示✓  */
+input[type="email"]:valid+span::before {
+    content: "✓";
+    color: green;
+}
+
+input[type="tel"]:valid+span::before {
+    content: "✓";
+    color: green;
+}
+
+/* 驗證不通過時 輸入框後面顯示✖  */
+input[type="email"]:invalid+span::before {
+    content: "✖ ";
+    color: red;
+}
+
+input[type="tel"]:invalid+span::before {
+    content: "✖ ";
+    color: red;
+}
+/* 設定送出&重填樣式 */
+#button1,#button2{
+    display: inline-block;
+    border: solid 1px ;
+    border-radius: 10px;
+    font-size: 18PX;
+    width: 70px;
+    height: 50px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+#button1{
+    background-color:#5C9A45 ;
+    border-color: #5C9A45;
+}
+#button2{
+    background-color:white;
+}
+
+@media screen and (max-width: 768px) {
+    div.formbox{
+        width: 50%;
+        height: 50%;
+        display: block;
+        font-size: 14px;
+     
+           
+    }
+    .contact-us{
+        width: 50%;
+    }
+}

@@ -1,0 +1,157 @@
+/* div.rhino3 {
+    overflow: hidden;
+    max-width:1503.2px;
+    max-height:469.16px ;
+  
+} */
+
+/* 上方橫幅的照片 */
+div.rhino3>img {
+    max-width: 1880px;
+    max-height: 500px;
+    overflow: hidden;
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: inherit;
+    max-height: 550px;
+    min-height: 300px;
+    height: auto;
+    margin: 0;
+    max-width: 100%; */
+
+}
+
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+@media screen and (max-width: 1600px) {
+    div.rhino3>img {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 501px) {
+    div.rhino3>img {
+        display: block;
+        width: 100%;
+    }
+
+    .animal-details,
+    .text-wrapper {
+        width: 60%;
+        display: block;
+
+    }
+
+    div.text-wrapper img {
+        /* width: 50%; */
+        width: 300px;
+        height: 200px;
+    }
+
+    .text-wrapper>h1 {
+        font-size: 28px;
+    }
+}
+
+/* 左邊犀牛介紹表 */
+.animal-details {
+    padding: 10px 30px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:brown; */
+
+}
+
+.animal-details-list {
+    background-color: rgba(197, 193, 156, 0.5);
+    width: 300px;
+    border-radius: 20px;
+    line-height: 30px;
+    padding: 40px 0px 30px 40px;
+}
+
+
+
+/* 右邊犀牛文字&圖片 */
+
+.text-wrapper>h1 {
+    text-align: center;
+}
+
+.text-wrapper {
+    /* background-color: aqua; */
+    max-width: 600px;
+    padding: 50px;
+    text-align: left;
+    /* float:left; */
+
+}
+
+
+/* 右邊犀牛文字&圖片 */
+.animal-text {
+    width: 600px;
+
+}
+
+
+.text-wrapper>img {
+    width: 580px;
+    height: 370px;
+
+}
+
+/* 文字段落介紹 */
+.text-wrapper>p {
+    line-height: 30px;
+}
+
+/* Ar */
+div.AR>h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+model-viewer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+
+}
+
+
+
+/* 下方組合圖片 */
+#combination {
+    width: 100%;
+    height: 50%;
+}
+
+div.combination1 {
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width:768px) {
+    div.combination1 {
+        margin-bottom: -120px;
+    }
+}

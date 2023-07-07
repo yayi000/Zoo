@@ -1,0 +1,83 @@
+    /* 園區新鮮事 字樣式調整 */
+    .new {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    /* 園區新鮮事 */
+    div.new>h1 {
+        color: green;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+    }
+
+    /* 上下頁圖示的最外層div */
+    .page {
+        width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* 滑鼠碰到上下頁圖示會變色 */
+    .page>a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* 上一頁圖示 */
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    /* 下一頁圖示 */
+    .next {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    /* 上下頁圖示 */
+    .round {
+        border-radius: 50%;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 10px;
+    }
+
+    /* 公告內容的最外層div */
+    .news-wrap {
+        width: 500px;
+        margin: auto;
+    }
+    /* 公告內容 */
+    .news-text {
+        border-bottom: solid 2px;
+        text-decoration: none;
+        padding: auto;
+        font-size: 20px;
+
+    }
+    /* 公告內容滑鼠碰到文字會變色 */
+    .news-text>a:hover {
+        color: #04AA6D;
+        cursor: pointer;
+    }
+    /* 下方圖片 */
+    div.news-wrap2{
+       margin-bottom: -20px;
+    }
+    #pampas{
+        width: 100%;
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        div.news-wrap2{
+          margin-bottom: -120px;
+        }
+
+    }

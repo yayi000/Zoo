@@ -1,0 +1,51 @@
+.message {
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+/*  標題字樣式調整*/
+div.message1>h1 {
+    color: green;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 副標題樣式調整 */
+div.message1>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*圖片 */
+.message2>img {
+    display: block;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+
+}
+
+div.message3 {
+    width: 700px;
+    margin: auto;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .message2>img {
+        width: 80%;
+        height: 80%;
+        display: block;
+
+    }
+
+    div.message3 {
+        width: 80%;
+    }
+
+}
